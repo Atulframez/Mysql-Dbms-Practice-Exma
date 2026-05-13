@@ -30,3 +30,12 @@ VALUES
 
 
 SELECT * FROM computer_shop;
+
+SELECT product_name, price FROM computer_shop
+WHERE category = 'Laptop' AND price < 60000.00;
+
+SELECT brand, COUNT(*) AS product_count FROM computer_shop
+GROUP BY brand; 
+
+SELECT * FROM computer_shop
+WHERE stock_quantity < 5;   
